@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-ExtraBold.ttf">
+            <string>NunitoSans-ExtraBold</string>
+        </array>
+        <array key="NunitoSans-ExtraLight.ttf">
+            <string>NunitoSans-ExtraLight</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Gongify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7b-uX-aLE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gongify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDe-v7-fEY">
+                                        <rect key="frame" x="24" y="81.5" width="209.5" height="76.5"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-ExtraBold" family="Nunito Sans" pointSize="56"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EDITION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxa-Bn-1XZ">
+                                        <rect key="frame" x="230.5" y="100" width="77" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-ExtraLight" family="Nunito Sans" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music" translatesAutoresizingMaskIntoConstraints="NO" id="zNa-tW-MrM">
+                                        <rect key="frame" x="287" y="28" width="80" height="80"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="VU5-xe-XSv"/>
+                                            <constraint firstAttribute="width" constant="80" id="x0Y-Qd-k2M"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.086274509803921567" green="0.62745098039215685" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="YDe-v7-fEY" secondAttribute="bottom" constant="12" id="8kY-xf-hwU"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="zNa-tW-MrM" secondAttribute="trailing" id="BCk-OS-jkl"/>
+                                    <constraint firstItem="gxa-Bn-1XZ" firstAttribute="baseline" secondItem="YDe-v7-fEY" secondAttribute="baseline" id="XfG-8t-qhu"/>
+                                    <constraint firstItem="gxa-Bn-1XZ" firstAttribute="leading" secondItem="YDe-v7-fEY" secondAttribute="trailing" constant="12" id="cTa-lI-pM3"/>
+                                    <constraint firstAttribute="height" constant="170" id="fae-I9-iyT"/>
+                                    <constraint firstItem="YDe-v7-fEY" firstAttribute="leading" secondItem="a7b-uX-aLE" secondAttribute="leading" constant="24" id="kFq-aQ-6Ef"/>
+                                    <constraint firstItem="zNa-tW-MrM" firstAttribute="top" secondItem="a7b-uX-aLE" secondAttribute="topMargin" id="nvx-82-PEw"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="gxa-Bn-1XZ"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fMj-sJ-UgD">
+                                <rect key="frame" x="8" y="178" width="359" height="481"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GongCell" rowHeight="180" id="6e6-v5-r1u" customClass="GongCell" customModule="Gongify" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="359" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6e6-v5-r1u" id="7SA-Qr-vSb">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="179.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gong" translatesAutoresizingMaskIntoConstraints="NO" id="G0L-O7-K6J">
+                                                    <rect key="frame" x="119.5" y="30" width="120" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="67C-AA-Atx"/>
+                                                        <constraint firstAttribute="width" constant="120" id="7wL-cQ-wkh"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F43-wK-UCa" customClass="TimeLabel" customModule="Gongify" customModuleProvider="target">
+                                                    <rect key="frame" x="123.5" y="19" width="112" height="49.5"/>
+                                                    <gestureRecognizers/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="VbN-HE-qlq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-ExtraBold" family="Nunito Sans" pointSize="42"/>
+                                                    <color key="textColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Rfh-LE-5hP">
+                                                    <rect key="frame" x="15" y="144" width="329" height="33"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esu-D8-7hc" customClass="WeekdayLabel" customModule="Gongify" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="47" height="33"/>
+                                                            <fontDescription key="fontDescription" name="NunitoSans-ExtraLight" family="Nunito Sans" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad9-Vx-3UI" customClass="WeekdayLabel" customModule="Gongify" customModuleProvider="target">
+                                                            <rect key="frame" x="47" y="0.0" width="47" height="33"/>
+                                                            <fontDescription key="fontDescription" name="NunitoSans-ExtraLight" family="Nunito Sans" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDx-dQ-VGX" customClass="WeekdayLabel" customModule="Gongify" customModuleProvider="target">
+                                                            <rect key="frame" x="94" y="0.0" width="47" height="33"/>
+                                                            <fontDescription key="fontDescription" name="NunitoSans-ExtraLight" family="Nunito Sans" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUz-e4-qf2" customClass="WeekdayLabel" customModule="Gongify" customModuleProvider="target">
+                                                            <rect key="frame" x="141" y="0.0" width="47" height="33"/>
+                                                            <fontDescription key="fontDescription" name="NunitoSans-ExtraBold" family="Nunito Sans" pointSize="18"/>
+                                                            <color key="textColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63S-vB-TOm" customClass="WeekdayLabel" customModule="Gongify" customModuleProvider="target">
+                                                            <rect key="frame" x="188" y="0.0" width="47" height="33"/>
+                                                            <fontDescription key="fontDescription" name="NunitoSans-ExtraLight" family="Nunito Sans" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaw-fa-W7a" customClass="WeekdayLabel" customModule="Gongify" customModuleProvider="target">
+                                                            <rect key="frame" x="235" y="0.0" width="47" height="33"/>
+                                                            <fontDescription key="fontDescription" name="NunitoSans-ExtraLight" family="Nunito Sans" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kss-kd-xag" customClass="WeekdayLabel" customModule="Gongify" customModuleProvider="target">
+                                                            <rect key="frame" x="282" y="0.0" width="47" height="33"/>
+                                                            <fontDescription key="fontDescription" name="NunitoSans-ExtraLight" family="Nunito Sans" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="33" id="rMb-yq-4mf"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <label opaque="NO" contentMode="left" verticalHuggingPriority="251" text="Eat Food and Take multivitamin" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gO-ie-P5p">
+                                                    <rect key="frame" x="23" y="69" width="329" height="25"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="F43-wK-UCa" firstAttribute="top" secondItem="7SA-Qr-vSb" secondAttribute="topMargin" constant="8" id="2i7-na-zrz"/>
+                                                <constraint firstItem="Rfh-LE-5hP" firstAttribute="top" secondItem="F43-wK-UCa" secondAttribute="bottom" constant="75.5" id="4K3-qu-eaI"/>
+                                                <constraint firstItem="Rfh-LE-5hP" firstAttribute="leading" secondItem="7SA-Qr-vSb" secondAttribute="leadingMargin" id="9aa-xZ-52U"/>
+                                                <constraint firstItem="4gO-ie-P5p" firstAttribute="top" secondItem="F43-wK-UCa" secondAttribute="bottom" id="J1a-X4-fkc"/>
+                                                <constraint firstItem="Rfh-LE-5hP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4gO-ie-P5p" secondAttribute="bottom" constant="8" id="JfH-iN-8V6"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Rfh-LE-5hP" secondAttribute="bottom" constant="-8" id="S5x-JS-AX1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Rfh-LE-5hP" secondAttribute="trailing" id="X4a-VF-9xX"/>
+                                                <constraint firstItem="G0L-O7-K6J" firstAttribute="centerX" secondItem="7SA-Qr-vSb" secondAttribute="centerX" id="XyO-3V-cdB"/>
+                                                <constraint firstItem="F43-wK-UCa" firstAttribute="centerX" secondItem="7SA-Qr-vSb" secondAttribute="centerX" id="mIG-Fq-HZ5"/>
+                                                <constraint firstItem="4gO-ie-P5p" firstAttribute="trailing" secondItem="7SA-Qr-vSb" secondAttribute="trailingMargin" constant="8" id="mo6-oG-7iq"/>
+                                                <constraint firstItem="G0L-O7-K6J" firstAttribute="centerY" secondItem="7SA-Qr-vSb" secondAttribute="centerY" id="ptG-Gf-QsV"/>
+                                                <constraint firstItem="4gO-ie-P5p" firstAttribute="leading" secondItem="7SA-Qr-vSb" secondAttribute="leadingMargin" constant="8" id="ywY-nW-wga"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="4gO-ie-P5p" id="sN8-Ph-n2Y"/>
+                                            <outlet property="gongImageView" destination="G0L-O7-K6J" id="tQN-Gs-Ac8"/>
+                                            <outlet property="timeLabel" destination="F43-wK-UCa" id="286-46-DPx"/>
+                                            <outletCollection property="weekdayLabels" destination="63S-vB-TOm" collectionClass="NSMutableArray" id="bLR-8r-Cmi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddNewGongCell" rowHeight="180" id="0kt-g5-zPf" customClass="AddNewGongCell" customModule="Gongify" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="208" width="359" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0kt-g5-zPf" id="1GC-Tk-ARJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="179.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new Gong" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eT7-B1-8H6">
+                                                    <rect key="frame" x="100" y="73" width="159" height="33"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-ExtraLight" family="Nunito Sans" pointSize="24"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="eT7-B1-8H6" secondAttribute="trailing" constant="85" id="AL4-Wp-iFY"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="eT7-B1-8H6" secondAttribute="bottom" constant="63" id="MWz-Fu-aaM"/>
+                                                <constraint firstItem="eT7-B1-8H6" firstAttribute="leading" secondItem="1GC-Tk-ARJ" secondAttribute="leadingMargin" constant="85" id="kpT-l2-31A"/>
+                                                <constraint firstItem="eT7-B1-8H6" firstAttribute="top" secondItem="1GC-Tk-ARJ" secondAttribute="topMargin" constant="62" id="lNW-6k-elz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5v4-Mu-3MW"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Dy4-rk-FhC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a7b-uX-aLE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="54h-n5-gLy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fMj-sJ-UgD" secondAttribute="trailing" constant="8" id="9m7-T8-1ZX"/>
+                            <constraint firstItem="a7b-uX-aLE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VaU-ei-etS"/>
+                            <constraint firstItem="a7b-uX-aLE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wxo-z5-LH7"/>
+                            <constraint firstItem="fMj-sJ-UgD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="gsF-Us-8qA"/>
+                            <constraint firstItem="fMj-sJ-UgD" firstAttribute="top" secondItem="a7b-uX-aLE" secondAttribute="bottom" constant="8" id="in2-Ms-df0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fMj-sJ-UgD" secondAttribute="bottom" constant="8" id="ukc-tK-WT2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="tableView" destination="fMj-sJ-UgD" id="aYm-GM-cJ8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gong" width="626" height="626"/>
+        <image name="music" width="512" height="512"/>
+    </resources>
+</document>

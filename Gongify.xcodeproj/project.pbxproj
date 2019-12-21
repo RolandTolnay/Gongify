@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF49337220DC24E50001E326 /* UpdateDescriptionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF49337120DC24E50001E326 /* UpdateDescriptionViewController.storyboard */; };
+		AF49337420DC250F0001E326 /* UpdateDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49337320DC250F0001E326 /* UpdateDescriptionViewController.swift */; };
+		AF49337620DC28460001E326 /* UIView+frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49337520DC28460001E326 /* UIView+frame.swift */; };
+		AF56DEDC20D9701A008BD6D5 /* StateType+userDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56DEDB20D9701A008BD6D5 /* StateType+userDefaults.swift */; };
+		AF56DEE320D97C9A008BD6D5 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF56DEDF20D97C99008BD6D5 /* NunitoSans-Regular.ttf */; };
+		AF56DEE420D97C9A008BD6D5 /* NunitoSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF56DEE020D97C99008BD6D5 /* NunitoSans-Black.ttf */; };
+		AF56DEE520D97C9A008BD6D5 /* NunitoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF56DEE120D97C9A008BD6D5 /* NunitoSans-ExtraBold.ttf */; };
+		AF56DEE620D97C9A008BD6D5 /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF56DEE220D97C9A008BD6D5 /* NunitoSans-Bold.ttf */; };
+		AF56DEE920D9958E008BD6D5 /* NunitoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF56DEE720D9958E008BD6D5 /* NunitoSans-Light.ttf */; };
+		AF56DEEA20D9958E008BD6D5 /* NunitoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF56DEE820D9958E008BD6D5 /* NunitoSans-ExtraLight.ttf */; };
+		AF56DEEC20D9A77C008BD6D5 /* GongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56DEEB20D9A77C008BD6D5 /* GongCell.swift */; };
+		AF56DEEE20D9A7D4008BD6D5 /* AddNewGongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56DEED20D9A7D4008BD6D5 /* AddNewGongCell.swift */; };
+		AF56DEF020D9A84E008BD6D5 /* UITableViewCell+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56DEEF20D9A84E008BD6D5 /* UITableViewCell+Identifier.swift */; };
+		AF56DF1D20DABCEA008BD6D5 /* WeekdayLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56DF1C20DABCEA008BD6D5 /* WeekdayLabel.swift */; };
+		AF66958320D6C0F000DA9CC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF66958220D6C0F000DA9CC8 /* AppDelegate.swift */; };
+		AF66958520D6C0F000DA9CC8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF66958420D6C0F000DA9CC8 /* MainViewController.swift */; };
+		AF66958820D6C0F000DA9CC8 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF66958620D6C0F000DA9CC8 /* MainViewController.storyboard */; };
+		AF66958A20D6C0F200DA9CC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF66958920D6C0F200DA9CC8 /* Assets.xcassets */; };
+		AF66958D20D6C0F200DA9CC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF66958B20D6C0F200DA9CC8 /* LaunchScreen.storyboard */; };
+		AF66959C20D6C38E00DA9CC8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF66959B20D6C38E00DA9CC8 /* AppState.swift */; };
+		AF6695A620D6C85F00DA9CC8 /* UIViewController+hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6695A320D6C85E00DA9CC8 /* UIViewController+hideKeyboard.swift */; };
+		AF6695A720D6C85F00DA9CC8 /* UIView+instantiateFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6695A420D6C85E00DA9CC8 /* UIView+instantiateFromNib.swift */; };
+		AF6695A820D6C85F00DA9CC8 /* UIViewController+instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6695A520D6C85F00DA9CC8 /* UIViewController+instantiate.swift */; };
+		AF6695AC20D6CC8600DA9CC8 /* GongReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6695AB20D6CC8600DA9CC8 /* GongReducer.swift */; };
+		AF6695D720D6DB7500DA9CC8 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6695D620D6DB7500DA9CC8 /* Store.swift */; };
+		AF6695D920D6E44700DA9CC8 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6695D820D6E44700DA9CC8 /* Trigger.swift */; };
+		AF6695DB20D6E47900DA9CC8 /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6695DA20D6E47900DA9CC8 /* Weekday.swift */; };
+		AF6695DD20D6E70900DA9CC8 /* Gong.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6695DC20D6E70900DA9CC8 /* Gong.swift */; };
+		AF6695DF20D6E7C200DA9CC8 /* GongAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6695DE20D6E7C200DA9CC8 /* GongAction.swift */; };
+		AFFB7C9D20DAC4BD00DB8AB9 /* TimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFB7C9C20DAC4BD00DB8AB9 /* TimeLabel.swift */; };
+		AFFB7CA020DAC8F100DB8AB9 /* UpdateTimeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFB7C9F20DAC8F100DB8AB9 /* UpdateTimeViewController.storyboard */; };
+		AFFB7CA220DAC96A00DB8AB9 /* UIVIew+layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFB7CA120DAC96A00DB8AB9 /* UIVIew+layer.swift */; };
+		AFFB7CA420DACAD100DB8AB9 /* UpdateTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFB7CA320DACAD100DB8AB9 /* UpdateTimeViewController.swift */; };
+		AFFB7CA720DACFED00DB8AB9 /* TimeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFB7CA620DACFED00DB8AB9 /* TimeTextField.swift */; };
+		AFFB7CA920DAD0C400DB8AB9 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFB7CA820DAD0C400DB8AB9 /* Time.swift */; };
+		C48C8C06578ABCE2D629407A /* Pods_Gongify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8459C1BDFB828F1192FED88 /* Pods_Gongify.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84D35C11EB20AA35E361CEF3 /* Pods-Gongify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gongify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gongify/Pods-Gongify.release.xcconfig"; sourceTree = "<group>"; };
+		AF49337120DC24E50001E326 /* UpdateDescriptionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpdateDescriptionViewController.storyboard; sourceTree = "<group>"; };
+		AF49337320DC250F0001E326 /* UpdateDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDescriptionViewController.swift; sourceTree = "<group>"; };
+		AF49337520DC28460001E326 /* UIView+frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+frame.swift"; sourceTree = "<group>"; };
+		AF56DEDB20D9701A008BD6D5 /* StateType+userDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StateType+userDefaults.swift"; sourceTree = "<group>"; };
+		AF56DEDF20D97C99008BD6D5 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
+		AF56DEE020D97C99008BD6D5 /* NunitoSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Black.ttf"; sourceTree = "<group>"; };
+		AF56DEE120D97C9A008BD6D5 /* NunitoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		AF56DEE220D97C9A008BD6D5 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
+		AF56DEE720D9958E008BD6D5 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Light.ttf"; sourceTree = "<group>"; };
+		AF56DEE820D9958E008BD6D5 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		AF56DEEB20D9A77C008BD6D5 /* GongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GongCell.swift; sourceTree = "<group>"; };
+		AF56DEED20D9A7D4008BD6D5 /* AddNewGongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewGongCell.swift; sourceTree = "<group>"; };
+		AF56DEEF20D9A84E008BD6D5 /* UITableViewCell+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Identifier.swift"; sourceTree = "<group>"; };
+		AF56DF1C20DABCEA008BD6D5 /* WeekdayLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeekdayLabel.swift; path = "/Users/roland.tolnay/Documents/Personal Projects/Gongify/Gongify/Views/WeekdayLabel.swift"; sourceTree = "<absolute>"; };
+		AF66957F20D6C0F000DA9CC8 /* Gongify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gongify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF66958220D6C0F000DA9CC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF66958420D6C0F000DA9CC8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AF66958720D6C0F000DA9CC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainViewController.storyboard; sourceTree = "<group>"; };
+		AF66958920D6C0F200DA9CC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF66958C20D6C0F200DA9CC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF66958E20D6C0F200DA9CC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF66959B20D6C38E00DA9CC8 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		AF6695A320D6C85E00DA9CC8 /* UIViewController+hideKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+hideKeyboard.swift"; sourceTree = "<group>"; };
+		AF6695A420D6C85E00DA9CC8 /* UIView+instantiateFromNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+instantiateFromNib.swift"; sourceTree = "<group>"; };
+		AF6695A520D6C85F00DA9CC8 /* UIViewController+instantiate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+instantiate.swift"; sourceTree = "<group>"; };
+		AF6695AB20D6CC8600DA9CC8 /* GongReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GongReducer.swift; sourceTree = "<group>"; };
+		AF6695D620D6DB7500DA9CC8 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		AF6695D820D6E44700DA9CC8 /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
+		AF6695DA20D6E47900DA9CC8 /* Weekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
+		AF6695DC20D6E70900DA9CC8 /* Gong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gong.swift; sourceTree = "<group>"; };
+		AF6695DE20D6E7C200DA9CC8 /* GongAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GongAction.swift; sourceTree = "<group>"; };
+		AFFB7C9C20DAC4BD00DB8AB9 /* TimeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLabel.swift; sourceTree = "<group>"; };
+		AFFB7C9F20DAC8F100DB8AB9 /* UpdateTimeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpdateTimeViewController.storyboard; sourceTree = "<group>"; };
+		AFFB7CA120DAC96A00DB8AB9 /* UIVIew+layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+layer.swift"; sourceTree = "<group>"; };
+		AFFB7CA320DACAD100DB8AB9 /* UpdateTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTimeViewController.swift; sourceTree = "<group>"; };
+		AFFB7CA620DACFED00DB8AB9 /* TimeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTextField.swift; sourceTree = "<group>"; };
+		AFFB7CA820DAD0C400DB8AB9 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		BB551A23EA08CB4D34996C67 /* Pods-Gongify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gongify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gongify/Pods-Gongify.debug.xcconfig"; sourceTree = "<group>"; };
+		E8459C1BDFB828F1192FED88 /* Pods_Gongify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gongify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF66957C20D6C0F000DA9CC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48C8C06578ABCE2D629407A /* Pods_Gongify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A1DD17912AABF2347C30482 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB551A23EA08CB4D34996C67 /* Pods-Gongify.debug.xcconfig */,
+				84D35C11EB20AA35E361CEF3 /* Pods-Gongify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AF49336D20DC23630001E326 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				AF6695A420D6C85E00DA9CC8 /* UIView+instantiateFromNib.swift */,
+				AFFB7CA120DAC96A00DB8AB9 /* UIVIew+layer.swift */,
+				AF49337520DC28460001E326 /* UIView+frame.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		AF49336E20DC23720001E326 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF6695A320D6C85E00DA9CC8 /* UIViewController+hideKeyboard.swift */,
+				AF6695A520D6C85F00DA9CC8 /* UIViewController+instantiate.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		AF56DEDD20D97C67008BD6D5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AF56DEDE20D97C76008BD6D5 /* Fonts */,
+				AF66958920D6C0F200DA9CC8 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		AF56DEDE20D97C76008BD6D5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AF56DEE820D9958E008BD6D5 /* NunitoSans-ExtraLight.ttf */,
+				AF56DEE720D9958E008BD6D5 /* NunitoSans-Light.ttf */,
+				AF56DEE020D97C99008BD6D5 /* NunitoSans-Black.ttf */,
+				AF56DEE220D97C9A008BD6D5 /* NunitoSans-Bold.ttf */,
+				AF56DEE120D97C9A008BD6D5 /* NunitoSans-ExtraBold.ttf */,
+				AF56DEDF20D97C99008BD6D5 /* NunitoSans-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AF66957620D6C0F000DA9CC8 = {
+			isa = PBXGroup;
+			children = (
+				AF66958120D6C0F000DA9CC8 /* Gongify */,
+				AF66958020D6C0F000DA9CC8 /* Products */,
+				2A1DD17912AABF2347C30482 /* Pods */,
+				E4851D3E912F7B35F1387331 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF66958020D6C0F000DA9CC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF66957F20D6C0F000DA9CC8 /* Gongify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF66958120D6C0F000DA9CC8 /* Gongify */ = {
+			isa = PBXGroup;
+			children = (
+				AF66958220D6C0F000DA9CC8 /* AppDelegate.swift */,
+				AF6695D620D6DB7500DA9CC8 /* Store.swift */,
+				AF66959420D6C16600DA9CC8 /* Model */,
+				AF66959620D6C2F300DA9CC8 /* State */,
+				AF66959720D6C30300DA9CC8 /* Reducers */,
+				AF66959820D6C31900DA9CC8 /* Actions */,
+				AF66959920D6C32800DA9CC8 /* Views */,
+				AF66959A20D6C33300DA9CC8 /* ViewControllers */,
+				AF6695A020D6C71100DA9CC8 /* Extensions */,
+				AF66958E20D6C0F200DA9CC8 /* Info.plist */,
+				AF56DEDD20D97C67008BD6D5 /* Assets */,
+			);
+			path = Gongify;
+			sourceTree = "<group>";
+		};
+		AF66959420D6C16600DA9CC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF6695D820D6E44700DA9CC8 /* Trigger.swift */,
+				AF6695DA20D6E47900DA9CC8 /* Weekday.swift */,
+				AF6695DC20D6E70900DA9CC8 /* Gong.swift */,
+				AFFB7CA820DAD0C400DB8AB9 /* Time.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF66959620D6C2F300DA9CC8 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				AF66959B20D6C38E00DA9CC8 /* AppState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		AF66959720D6C30300DA9CC8 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				AF6695AB20D6CC8600DA9CC8 /* GongReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		AF66959820D6C31900DA9CC8 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				AF6695DE20D6E7C200DA9CC8 /* GongAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		AF66959920D6C32800DA9CC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF66958B20D6C0F200DA9CC8 /* LaunchScreen.storyboard */,
+				AF56DEEB20D9A77C008BD6D5 /* GongCell.swift */,
+				AF56DEED20D9A7D4008BD6D5 /* AddNewGongCell.swift */,
+				AF56DF1C20DABCEA008BD6D5 /* WeekdayLabel.swift */,
+				AFFB7C9C20DAC4BD00DB8AB9 /* TimeLabel.swift */,
+				AFFB7CA620DACFED00DB8AB9 /* TimeTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF66959A20D6C33300DA9CC8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF66958420D6C0F000DA9CC8 /* MainViewController.swift */,
+				AF66958620D6C0F000DA9CC8 /* MainViewController.storyboard */,
+				AFFB7CA320DACAD100DB8AB9 /* UpdateTimeViewController.swift */,
+				AFFB7C9F20DAC8F100DB8AB9 /* UpdateTimeViewController.storyboard */,
+				AF49337320DC250F0001E326 /* UpdateDescriptionViewController.swift */,
+				AF49337120DC24E50001E326 /* UpdateDescriptionViewController.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AF6695A020D6C71100DA9CC8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF49336E20DC23720001E326 /* UIViewController */,
+				AF49336D20DC23630001E326 /* UIView */,
+				AF56DEDB20D9701A008BD6D5 /* StateType+userDefaults.swift */,
+				AF56DEEF20D9A84E008BD6D5 /* UITableViewCell+Identifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E4851D3E912F7B35F1387331 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8459C1BDFB828F1192FED88 /* Pods_Gongify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF66957E20D6C0F000DA9CC8 /* Gongify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF66959120D6C0F200DA9CC8 /* Build configuration list for PBXNativeTarget "Gongify" */;
+			buildPhases = (
+				E0475D85D74D00E1F6C82234 /* [CP] Check Pods Manifest.lock */,
+				AF66957B20D6C0F000DA9CC8 /* Sources */,
+				AF66957C20D6C0F000DA9CC8 /* Frameworks */,
+				AF66957D20D6C0F000DA9CC8 /* Resources */,
+				ABB8324F8CF9F752EE8CB2AD /* [CP] Embed Pods Frameworks */,
+				AF6695D220D6D67A00DA9CC8 /* Run SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gongify;
+			productName = Gongify;
+			productReference = AF66957F20D6C0F000DA9CC8 /* Gongify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF66957720D6C0F000DA9CC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Roland Tolnay";
+				TargetAttributes = {
+					AF66957E20D6C0F000DA9CC8 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = AF66957A20D6C0F000DA9CC8 /* Build configuration list for PBXProject "Gongify" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF66957620D6C0F000DA9CC8;
+			productRefGroup = AF66958020D6C0F000DA9CC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF66957E20D6C0F000DA9CC8 /* Gongify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF66957D20D6C0F000DA9CC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF66958D20D6C0F200DA9CC8 /* LaunchScreen.storyboard in Resources */,
+				AF56DEE620D97C9A008BD6D5 /* NunitoSans-Bold.ttf in Resources */,
+				AFFB7CA020DAC8F100DB8AB9 /* UpdateTimeViewController.storyboard in Resources */,
+				AF49337220DC24E50001E326 /* UpdateDescriptionViewController.storyboard in Resources */,
+				AF66958A20D6C0F200DA9CC8 /* Assets.xcassets in Resources */,
+				AF66958820D6C0F000DA9CC8 /* MainViewController.storyboard in Resources */,
+				AF56DEE320D97C9A008BD6D5 /* NunitoSans-Regular.ttf in Resources */,
+				AF56DEE520D97C9A008BD6D5 /* NunitoSans-ExtraBold.ttf in Resources */,
+				AF56DEE420D97C9A008BD6D5 /* NunitoSans-Black.ttf in Resources */,
+				AF56DEE920D9958E008BD6D5 /* NunitoSans-Light.ttf in Resources */,
+				AF56DEEA20D9958E008BD6D5 /* NunitoSans-ExtraLight.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABB8324F8CF9F752EE8CB2AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gongify/Pods-Gongify-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gongify/Pods-Gongify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF6695D220D6D67A00DA9CC8 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		E0475D85D74D00E1F6C82234 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gongify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF66957B20D6C0F000DA9CC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6695DF20D6E7C200DA9CC8 /* GongAction.swift in Sources */,
+				AF6695DB20D6E47900DA9CC8 /* Weekday.swift in Sources */,
+				AFFB7CA920DAD0C400DB8AB9 /* Time.swift in Sources */,
+				AFFB7CA720DACFED00DB8AB9 /* TimeTextField.swift in Sources */,
+				AF49337620DC28460001E326 /* UIView+frame.swift in Sources */,
+				AF66959C20D6C38E00DA9CC8 /* AppState.swift in Sources */,
+				AF66958520D6C0F000DA9CC8 /* MainViewController.swift in Sources */,
+				AF56DEF020D9A84E008BD6D5 /* UITableViewCell+Identifier.swift in Sources */,
+				AFFB7CA220DAC96A00DB8AB9 /* UIVIew+layer.swift in Sources */,
+				AF56DEEC20D9A77C008BD6D5 /* GongCell.swift in Sources */,
+				AF6695A820D6C85F00DA9CC8 /* UIViewController+instantiate.swift in Sources */,
+				AFFB7C9D20DAC4BD00DB8AB9 /* TimeLabel.swift in Sources */,
+				AF6695DD20D6E70900DA9CC8 /* Gong.swift in Sources */,
+				AF6695A720D6C85F00DA9CC8 /* UIView+instantiateFromNib.swift in Sources */,
+				AFFB7CA420DACAD100DB8AB9 /* UpdateTimeViewController.swift in Sources */,
+				AF6695D920D6E44700DA9CC8 /* Trigger.swift in Sources */,
+				AF56DEDC20D9701A008BD6D5 /* StateType+userDefaults.swift in Sources */,
+				AF49337420DC250F0001E326 /* UpdateDescriptionViewController.swift in Sources */,
+				AF6695A620D6C85F00DA9CC8 /* UIViewController+hideKeyboard.swift in Sources */,
+				AF6695AC20D6CC8600DA9CC8 /* GongReducer.swift in Sources */,
+				AF6695D720D6DB7500DA9CC8 /* Store.swift in Sources */,
+				AF56DEEE20D9A7D4008BD6D5 /* AddNewGongCell.swift in Sources */,
+				AF56DF1D20DABCEA008BD6D5 /* WeekdayLabel.swift in Sources */,
+				AF66958320D6C0F000DA9CC8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF66958620D6C0F000DA9CC8 /* MainViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF66958720D6C0F000DA9CC8 /* Base */,
+			);
+			name = MainViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		AF66958B20D6C0F200DA9CC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF66958C20D6C0F200DA9CC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF66958F20D6C0F200DA9CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF66959020D6C0F200DA9CC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF66959220D6C0F200DA9CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB551A23EA08CB4D34996C67 /* Pods-Gongify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JYW3B323JJ;
+				INFOPLIST_FILE = Gongify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.rolandtolnay.Gongify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF66959320D6C0F200DA9CC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84D35C11EB20AA35E361CEF3 /* Pods-Gongify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JYW3B323JJ;
+				INFOPLIST_FILE = Gongify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.rolandtolnay.Gongify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF66957A20D6C0F000DA9CC8 /* Build configuration list for PBXProject "Gongify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF66958F20D6C0F200DA9CC8 /* Debug */,
+				AF66959020D6C0F200DA9CC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF66959120D6C0F200DA9CC8 /* Build configuration list for PBXNativeTarget "Gongify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF66959220D6C0F200DA9CC8 /* Debug */,
+				AF66959320D6C0F200DA9CC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF66957720D6C0F000DA9CC8 /* Project object */;
+}

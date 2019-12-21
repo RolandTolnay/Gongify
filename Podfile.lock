@@ -1,0 +1,24 @@
+PODS:
+  - Hero (1.2.0)
+  - ReSwift (4.0.1)
+  - SwiftDate (4.5.1)
+
+DEPENDENCIES:
+  - Hero
+  - ReSwift
+  - SwiftDate
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Hero
+    - ReSwift
+    - SwiftDate
+
+SPEC CHECKSUMS:
+  Hero: 33dadf2cd1c98af71e213dcbc2902e6e03622a4e
+  ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
+  SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
+
+PODFILE CHECKSUM: 05174bc654500b9cdaa2b5e54480416f83a5c50c
+
+COCOAPODS: 1.5.3
